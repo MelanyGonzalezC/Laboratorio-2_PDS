@@ -2,9 +2,36 @@
 ## Descripción del proyecto
 Este proyecto implementa un código para estudiar la convolución en señales y sistemas, y la correlación para medir su similitud. A partir de una señal electromiográfica (EMG) de Physionet, se aplica la Transformada de Fourier para analizar sus componentes en el dominio de la frecuencia.
 
+## Convolución en señales y sistemas
+Para la convolución primeramente el método enseñado en clase que consiste en ubicar h[n] y x[n] en una tabla multiplicando cada muestra de la fila con cada muestra de la columna, de esta manera completando una tabla y para hallar la señal y[n]. Se sumaban los valores en diagonales en orden, y con ello encontrábamos la señal resultante de la convolución a mano como se puede ver en la imagen. 
 
+![image](https://github.com/user-attachments/assets/42e08cf3-8355-4ea0-a77f-91583d712f9b)
 
+*Procedimiendo utilizado*
 
+Con esto procedíamos a graficarlo ubicando en X las posiciones de las muestras y en Y el valor de cada uno de estas.
+
+![image](https://github.com/user-attachments/assets/046200eb-6d30-4095-afa4-fe8397446eb9)
+
+*Grafica de la convolucion hecha a mano*
+
+Después de esto procedió a volver a encontrar la señal 𝑦[𝑛] resultante de la convolución utilizando Python para ello se utiliza esta parte del código.  
+Donde definiamos como arreglos el sistema h[n] y la señal x[n] para cada uno de los integrantes, para proceder a utilizar la función “convolve” que realiza la convolución. Y añadimos un print para comparar los resultados entre el manual y el digital.
+
+![image](https://github.com/user-attachments/assets/4993c2f9-1aa3-4ffb-b30b-f2072aa6f739)
+
+*Código para calculo de la convolución *
+
+Luego graficamos usando:
+
+![image](https://github.com/user-attachments/assets/54b3cad4-e5f0-4742-965b-3552f1014fc9)
+
+*Código para graficar la convolución*
+
+Y como resultado tenemos la siguiente grafica donde evidenciamos la señal 𝑦[𝑛] resultante de la convolución. Determinado la respuesta de salida del sistema ante la señal de entrada.
+![image](https://github.com/user-attachments/assets/995e22ed-7a9e-4059-b097-f3a3cfe3229a)
+
+*graficas de la convolución resultante para cada uno de los integrantes *
 
 ## Correlación entre señales 
 Para la segunda parte del código, se evaluan la correlación de dos señales que en este caso son : 
